@@ -24,13 +24,13 @@ for h in range(numb1, numb1*2):
 print()
 
 #Ejercicio 5 y 6
-frase = input("frase: ")
+frase = input("frase: ") 
 print("Las vocales de la frase son: ")
 for r in "aeiou":
     if r in frase:
         print(r)
-print()
 
+print()
 
 #Ejercicio 7
 total = 0
@@ -53,10 +53,25 @@ for a in range(año1, año2 + 1):
     if a % 100 != 0 or a % 400 == 0:
         print(a)
 
+print()
+
 #Ejercicio9
 numero= int(input("Número:"))
 fact=1
 if numero!=0:
     for i in range(1,numero+1):
-        fact=fact*i
+        fact=fact*i #
 print("Factorial:", fact)
+
+print()
+
+#Ejercicio 10
+n1 = 0
+n2 = 1
+print(n1)
+print(n2)
+for i in range(8):
+    n3 = n1 + n2
+    print(n3)
+    n1 = n2
+    n2 = n3
