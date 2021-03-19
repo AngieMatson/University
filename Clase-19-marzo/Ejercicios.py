@@ -54,3 +54,9 @@ for a in range(año1, año2 + 1):
         print(a)
 
 #Ejercicio9
+numero= int(input("Número:"))
+fact=1
+if numero!=0:
+    for i in range(1,numero+1):
+        fact=fact*i
+print("Factorial:", fact)
