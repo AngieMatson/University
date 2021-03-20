@@ -1,3 +1,6 @@
+'''Dar el promedio definitivo de una materia y decir si aprobó o no. 
+El usuario puede ingresar las materias que requiera'''
+
 nota1 = float(input("Ingrese la primera nota = "))
 nota2 = float(input("Ingrese la segunda nota = "))
 nota3 = float(input("Ingrese la tercera nota = "))

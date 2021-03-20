@@ -1,3 +1,5 @@
+#Mostrar cuál número es menor o mayor dependiendo del número y se detiene cuando se ingresa un valor negativo
+
 mayor = 0
 menor = 0
 agregar = True

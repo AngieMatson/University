@@ -1,3 +1,5 @@
+#Programa --> Hallar la cantidad de números ingresados, la suma total y el promedio
+
 cantidad = 0
 acum = 0
 dato = int(input("Ingrese un número = "))
