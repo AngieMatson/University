@@ -1,0 +1,2 @@
+for i in ['JLo', 'Benito', 'Rosalia', 2021]: #Se utiliza el for para darle a la variable i en este caso una lista 
+  print ("Hola. Ahora i vale",i) #Se imprime cada elemento de la lista asignado para la variable i junto con  el mensaje
