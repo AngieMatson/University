@@ -2,7 +2,6 @@
 /*
     Mostrar todos los números impares que hay entre dos números ingresados por el usuario 
 */
-
 var n1 = parseInt(prompt("Ingrese el primer número", 0));
 var n2 = parseInt(prompt("Ingrese el segundo número", 0));
 
