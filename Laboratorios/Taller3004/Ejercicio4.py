@@ -10,4 +10,4 @@ def calculadora(number1,number2):
     print("El resultado de la multiplicación es = " + str(number1 * number2) +"\n")
     print("El resultado de la división es = " + str(number1 / number2) + "\n")
     print("El resultado del módulo es = " + str(number1 % number2) + "\n")
-calculadora(number1,number2)
+calculadora(number1,number2) 
