@@ -2,7 +2,6 @@
 #Definir variables
 number1 = float(input("Ingrese el primer número = ") )
 number2 = float(input("Ingrese el segundo número = "))
-print()
 #Procesos
 def calculadora(number1,number2):
     print("El resultado de la suma es = " + str(number1 + number2) + "\n")
