@@ -5,6 +5,7 @@ def sumaDigitos(numero):
         suma=suma+digito
         numero=numero//10
     return suma
+    
 sumatoria=0
 num=int(input("Ingrese el número a procesar, si desea dejar de ingresar datos escribir el 0: "))
 while num!=0:
