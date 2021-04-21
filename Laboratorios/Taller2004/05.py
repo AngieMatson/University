@@ -5,4 +5,4 @@ def fun_fact(x):
    x=(x*fun_fact(x-1))
  return x
 num=10
-print("El factorial de" + " " + str(num) + " " + "es" + " " +  "fun_fact(num)")
+print ("El factorial de ", num, "es", fun_fact(num))
