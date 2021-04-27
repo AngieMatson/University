@@ -5,7 +5,7 @@ while add == "yes": # The loop has the function of iterating until the user deci
     word = list(word)
     reversed_word = list(reversed_word)  #Become a list.
     reversed_word.reverse()
-    if word == word: #The condition is to evalute the last variables to be able to print if it is or not.
+    if word == reversed_word: #The condition is to evalute the last variables to be able to print if it is or not.
         print("It's a Palindrome.")
     else:
         print("It isn't a Palindrome.")

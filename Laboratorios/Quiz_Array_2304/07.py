@@ -23,4 +23,4 @@ if password_Incion == ("".join(lisy) + str(numero)) and user==user_Inicio: #Se d
 elif password_Incion== ("".join(lisy) + str(numero)) and user==user_Inicio:
     print("Datos son correctos, será redirigido a la pantalla principal en pocos minutos.")
 else:
-    print("Los datos son incorrectos.")
+    print("Los datos son incorrectos.") 
