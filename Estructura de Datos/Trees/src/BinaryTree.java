@@ -175,6 +175,16 @@ public class BinaryTree<T extends Comparable<T>> {
         return true;
     }
 
+    public int countNodes(NodoArbolBinario<T> nodo) {
+        if (nodo == null) {
+            return 0;
+        }
+        int leftCount = countNodes(nodo.getLeft());
+        int rightCount = countNodes(nodo.getRight());
+        return 1 + leftCount + rightCount;
+    }
+
+
 
 
 }

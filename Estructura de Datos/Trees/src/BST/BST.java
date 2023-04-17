@@ -1,70 +1,25 @@
 package BST;
+import javax.swing.tree.TreeNode;
 import java.util.*;
 
 public class BST {
 
-// Clase producto con los atributos
-    public class Producto {
-        public String nombre;
-        public double precio;
-        public int ID;
-
-
-    public Producto(String nombre, double precio) {
-            this.nombre = nombre;
-            this.precio = precio;
-        }
-
-        public String getNombre() {
-            return nombre;
-        }
-
-        public double getPrecio() {
-            return precio;
-        }
-
-    }
-
-    // Creación de la lista doble
-    public void main(String[] args) {
-        LinkedList<Producto> productos = new LinkedList<>();
-        productos.add(new Producto("Producto 1", 10.0));
-        productos.add(new Producto("Producto 2", 5.0));
-        productos.add(new Producto("Producto 3", 15.0));
-
-        Collections.sort(productos, new Comparator<Producto>() {
-            @Override
-            public int compare(Producto p1, Producto p2) {
-                if (p1.getPrecio() > p2.getPrecio()) {
-                    return 1;
-                } else if (p1.getPrecio() < p2.getPrecio()) {
-                    return -1;
-                }
-                return 0;
-            }
-        });
-
-        for (Producto p : productos) {
-            System.out.println(p.getNombre() + " - " + p.getPrecio());
-        }
-    }
-
     // nodo árbol
 
-    public class Nodo {
-        private Producto valor;
+    public class Nodo<T> {
+        private Nodo T;
         private Nodo izquierdo;
         private Nodo derecho;
 
-        public Nodo(Producto valor) {
-            this.valor = valor;
+        public <T> Nodo(T valor) {
+            this.T = (Nodo) valor;
         }
 
-        public Producto getValor() {
-            return valor;
+        public T getValor() {
+            return (T) T.getValor();
         }
 
-        public Nodo getIzquierdo() {
+        public static TreeNode<T> getIzquierdo() {
             return izquierdo;
         }
 
@@ -72,7 +27,7 @@ public class BST {
             this.izquierdo = izquierdo;
         }
 
-        public Nodo getDerecho() {
+        public static TreeNode<T> getDerecho() {
             return derecho;
         }
 
@@ -81,22 +36,59 @@ public class BST {
         }
     }
 
-    public Nodo listaToArbol(LinkedList<Producto> productos, int inicio, int fin) {
-        if (inicio > fin) {
-            return null;
-        }
+    public boolean isEmpty() {
+        boolean root = false;
 
-        int medio = (inicio + fin) / 2;
-        Nodo nodo = new Nodo(productos.get(medio));
-
-        nodo.setIzquierdo(listaToArbol(productos, inicio, medio - 1));
-        nodo.setDerecho(listaToArbol(productos, medio + 1, fin));
-
-        return nodo;
+        return root = Boolean.parseBoolean(null);
     }
 
-    private LinkedList<BST.BST.Producto> productos;
-    Nodo raiz = listaToArbol(productos, 0, productos.size() - 1);
+
+    public boolean isComplete(Nodo root) {
+        if (root == null) {
+            return true;
+        }
+
+        Queue<Nodo> queue = new LinkedList<>();
+        queue.offer(root);
+
+        boolean end = false;
+        while (!queue.isEmpty()) {
+            Nodo node = queue.poll();
+            if (node.getIzquierdo() != null) {
+                if (end) {
+                    return false;
+                }
+                queue.offer(node.getIzquierdo());
+            } else {
+                end = true;
+            }
+
+            if (node.getDerecho() != null) {
+                if (end) {
+                    return false;
+                }
+                queue.offer(node.getDerecho());
+            } else {
+                end = true;
+            }
+        }
+
+        return true;
+    }
+
+    public int getNumberOfNodes() {
+        TreeNode root = null;
+        return countNodes(root);
+    }
+
+    private <T> int countNodes(TreeNode node) {
+        if (node == null) {
+            return 0;
+        } else {
+            return 1 + countNodes(Nodo.getIzquierdo()) + countNodes(Nodo.getDerecho());
+        }
+    }
+
 
 }
 
