@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Estructura de Datos/Listas/Lisssst/Expresiones pila/Expresiones pila.iml" filepath="$PROJECT_DIR$/Estructura de Datos/Listas/Lisssst/Expresiones pila/Expresiones pila.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Estructura de Datos/Listas/ListasAngieDuarte/ListasAngieDuarte.iml" filepath="$PROJECT_DIR$/Estructura de Datos/Listas/ListasAngieDuarte/ListasAngieDuarte.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Estructura de Datos/Pilas/Pilas.iml" filepath="$PROJECT_DIR$/Estructura de Datos/Pilas/Pilas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Estructura de Datos/Queue/Queue.iml" filepath="$PROJECT_DIR$/Estructura de Datos/Queue/Queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Estructura de Datos/AngieRMI/RMIAngie/RMIClient/RMIClient.iml" filepath="$PROJECT_DIR$/Estructura de Datos/AngieRMI/RMIAngie/RMIClient/RMIClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Estructura de Datos/AngieRMI/RMIAngie/RMIServer/RMIServer.iml" filepath="$PROJECT_DIR$/Estructura de Datos/AngieRMI/RMIAngie/RMIServer/RMIServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Estructura de Datos/Trees/Trees.iml" filepath="$PROJECT_DIR$/Estructura de Datos/Trees/Trees.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/University.iml" filepath="$PROJECT_DIR$/.idea/University.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Estructura de Datos/Listas/Lisssst/listasenlazadas1/listasenlazadas1.iml" filepath="$PROJECT_DIR$/Estructura de Datos/Listas/Lisssst/listasenlazadas1/listasenlazadas1.iml" />
+    </modules>
+  </component>
+</project>

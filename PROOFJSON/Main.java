@@ -34,6 +34,7 @@ public class Main {
         JButton agregarButton = new JButton("Agregar");
         JButton guardarButton = new JButton("Guardar");
 
+
         agregarButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String nombre = nombreText.getText();
@@ -56,7 +57,7 @@ public class Main {
                 Gson gson = new GsonBuilder().setPrettyPrinting().create();
                 String json = gson.toJson(listaUsuarios);
                 try {
-                    FileWriter file = new FileWriter("users.json");
+                    FileWriter file = new FileWriter("usuarios.json", true); // Agregar al final del archivo existente
                     file.write(json);
                     file.close();
                     JOptionPane.showMessageDialog(panel, "Datos guardados correctamente");
@@ -64,11 +65,8 @@ public class Main {
                     ex.printStackTrace();
                     JOptionPane.showMessageDialog(panel, "Error al guardar los datos");
                 }
-
-                listaUsuarios.clear();
             }
         });
-
         inputPanel.add(nombreLabel);
         inputPanel.add(nombreText);
 

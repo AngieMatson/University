@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="RMIServer">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Estructura de Datos/AngieRMI/RMIAngie/RMIServer/out/artifacts/RMIServer_jar/RMIServer.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
